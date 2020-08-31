@@ -1,0 +1,113 @@
+/* Design for Tablet */
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* Landing Section */
+  .intro-container {
+    grid-template-columns: 600px;
+    grid-template-rows: 42.5% 57.5%;
+  }
+
+  .introImg-container {
+    width: inherit;
+    background-position: center, 0;
+  }
+
+  .main {
+    padding: 0;
+    margin: auto 0;
+  }
+
+  /* Services Section */
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 280px;
+    gap: 10px;
+  }
+
+  /* Articles Scetion */
+  .aside-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+  }
+
+  .news-card {
+    width: inherit;
+    height: 450px;
+  }
+
+  /* Footer Section */
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: space-around;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+  }
+}
+
+@media (min-width: 960px) {
+  /* Intro Section */
+
+  .intro-container {
+    width: 95%;
+    margin: 0 auto;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+  }
+
+  .main {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    text-align: start;
+    padding-left: 15%;
+  }
+
+  .main .main-title {
+    font-size: 2rem;
+  }
+
+  .main p {
+    padding: 1.5rem 0;
+  }
+
+  .introImg-container {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    background-position: bottom, 0;
+  }
+
+  /* Services Section */
+
+  .services-intro {
+    text-align: start;
+    width: 45%;
+  }
+
+  .servicesTitle-main {
+    display: inline;
+  }
+
+  .servicesTitle-sub {
+    display: inline;
+  }
+}
